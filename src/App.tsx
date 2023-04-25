@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Home } from './pages/home';
 import {Header} from "./components/header";
-import "./App.css";
 import {Footer} from "./components/footer";
 function App() {
     const [navOpen, setNavOpen] = React.useState<boolean>(false);
