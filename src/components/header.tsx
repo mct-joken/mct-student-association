@@ -125,6 +125,7 @@ export const Header:React.FC<Props> = ({
                                     setOpenNav(true)
                                     setNavOpen(true)
                                 }}
+                                className={"MenuButton"}
                             >
                                 Menu⬇︎
                             </div>
@@ -133,7 +134,9 @@ export const Header:React.FC<Props> = ({
                                 onClick={() => {
                                     setOpenNav(false)
                                     setNavOpen(false)
-                                }}>
+                                }}
+                                className={"MenuButton"}
+                            >
                                 Close⬆︎
                             </div>
                         )}
