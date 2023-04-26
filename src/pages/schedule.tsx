@@ -1,6 +1,5 @@
 import React from "react";
 import { Title } from '../components/title';
-import "../css/schedule.css"
 const data = [
   { data: "4/5", content: "始業式・対面式" },
   { data: "4/9", content: "部活動紹介" },
@@ -43,10 +42,12 @@ export function Schedule() {
                 border: "1px solid #000",
                 borderCollapse: "collapse",
                 backgroundColor: "#D9D9D9",
-              }}><p>{item.data}</p></td>
+              }}><h3 style={{
+                textAlign: "center",
+              }}>{item.data}</h3></td>
               <td style={{
                 border: "1px solid #000",
-              }}><p>{item.content}</p></td>
+              }}><h3>{item.content}</h3></td>
             </tr>
           ))}
           </tbody>
