@@ -17,7 +17,7 @@ const hometext = "# 当サイトの概要\n" +
     "[松江高専HP](https://www.matsue-ct.jp) \n\n" +
     "[学生会Twitter](https://twitter.com/MctGakuseikai) \n" +
     "- - - \n" +
-    "ここに記事をおく予定 まだバックエンドできてないからごめん"
+    "ここに記事をおく予定 まだバックエンドできてないからごめん木島無能"
 export function Home() {
     return (
         <Markdown text={hometext} />
