@@ -22,14 +22,12 @@ export function Schedule() {
           <tr>
             <th style={{
               border: "1px solid #000",
-              borderCollapse: "collapse",
               backgroundColor: "#D9D9D9",
               width: "10rem",
             }}><h3>日付</h3></th>
             <th
               style={{
                 border: "1px solid #000",
-                borderCollapse: "collapse",
                 width: "20rem",
               }}
             ><h3>活動内容</h3></th>
@@ -40,14 +38,17 @@ export function Schedule() {
             <tr>
               <td style={{
                 border: "1px solid #000",
-                borderCollapse: "collapse",
                 backgroundColor: "#D9D9D9",
-              }}><h3 style={{
+              }}><p style={{
                 textAlign: "center",
-              }}>{item.data}</h3></td>
+                fontStyle: "normal",
+              }}>{item.data}</p></td>
               <td style={{
                 border: "1px solid #000",
-              }}><h3>{item.content}</h3></td>
+              }}><p style={{
+                fontStyle: "normal",
+              }}
+              >{item.content}</p></td>
             </tr>
           ))}
           </tbody>
