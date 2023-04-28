@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import {Link} from "react-router-dom";
 import TwitterLogo from "../assets/TwitterLogo.svg";
 import InstagramLogo from "../assets/InstagramLogo.svg";
+import "../css/footer.css"
 
 const SmallListStyle = {
     marginTop: "1rem",
@@ -30,20 +31,10 @@ export function Footer() {
         };
     }, []);
     return (
-        <footer style={{
-            display: "grid",
-            justifyContent: "center",
-            width: "100%",
-        }}>
-            {windowWidth >= 600 ?
-                <>
-                    <div style={{
-                        height: "auto",
-                        width: "100%",
-                        display: "flex",
-                        justifyContent: "center",
-                    }}
-                    >
+        <footer className="footer">
+            <div className="inner-footer">
+                {windowWidth >= 600 ?
+                    <>
                         <ul style={{
                             listStyleType: "none",
                             display: "flex",
@@ -57,16 +48,12 @@ export function Footer() {
                             <li><Link to={"/links"} style={LargeListStyle} >リンク</Link></li>
                             <li><Link to={"/industry"} style={LargeListStyle}>インダストリ</Link></li>
                         </ul>
-                    </div>
-                </> : <>
-                    <div style={{
-                        width: "100%",
-                    }}>
+                    </> : <>
                         <div style={{
-                            height: "auto",
-                            width: "100%",
-                            display: "list-item",
-                        }}
+                                height: "auto",
+                                width: "100%",
+                                display: "list-item",
+                            }}
                         >
                             <ul style={{
                                 listStyleType: "none",
@@ -94,9 +81,9 @@ export function Footer() {
                             <Link to={"https://twitter.com/MctGakuseikai"}><img src={TwitterLogo} style={{height: "25px"}} alt={"松江高専学生会のTwitter"}/></Link>
                             <Link to={"https://www.instagram.com/mctgakuseikai/"}><img src={InstagramLogo} style={{height: "25px"}} alt={"松江高専学生会のInstagram"}/></Link>
                         </div>
-                    </div>
-                </>
-            }
+                    </>
+                }
+            </div>
         </footer>
     )
 }
