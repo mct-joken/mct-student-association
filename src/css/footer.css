@@ -1,34 +1,67 @@
+/* 通常時は.footerのスタイルのみ、狭いときは.footer.narrowも */
+
 .footer {
-    display: grid;
-    justify-content: center;
     width: 100%;
+    height: auto;
+    justify-content: center;
 }
 
-.inner-footer {
+.footer .links {
     height: auto;
     width: 100%;
-    display: flex;
     justify-content: center;
 }
 
-.footerLink {
-    color: #000;
-    text-decoration: underline;
-    padding: 0.25rem 1rem;
+.footer.narrow .links {
+    display: list-item;
 }
 
-ul li {
+.footer .links ul {
+    list-style-type: none;
+    display: flex;
+    float: none;
+    flex-wrap: nowrap;
+    gap: auto;
+    margin: 1rem 0;
+}
+
+.footer.narrow .links ul {
+    padding: 0;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.footer .links ul li {
     margin-top: 1rem;
-    width: 50%;
+    flex-grow: 1;
     margin-left: 0;
     padding-left: 0;
+    text-align: center;
 }
 
-@media screen and (max-width: 600) {
-    .inner-footer {
-        height: initial;
-        width: 100%;
-        display: initial;
-        justify-content: initial;
-    }
+.footer.narrow .links ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer .links ul li a {
+    margin-top: 1rem;
+    width: auto;
+    color: #000;
+    text-decoration: none;
+    padding: 0.25rem 1rem;
+    white-space: nowrap;
+}
+
+.footer.narrow .links ul li a {
+    text-decoration: underline;
+}
+
+.footer .icons {
+    width: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .icons img {
+    height: 25px
 }
