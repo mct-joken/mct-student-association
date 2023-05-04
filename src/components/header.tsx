@@ -71,7 +71,7 @@ export const Header:React.FC<Props> = ({
                             リンク
                         </Link>
                         <Link to={"industori"} className={"headerlink"}>
-                            インダストリ
+                            インダスとり
                         </Link>
                     </div>
 
