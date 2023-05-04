@@ -70,7 +70,7 @@ export const Header:React.FC<Props> = ({
                         <Link to={"/links"} className={"headerlink"}>
                             リンク
                         </Link>
-                        <Link to={"industry"} className={"headerlink"}>
+                        <Link to={"industori"} className={"headerlink"}>
                             インダストリ
                         </Link>
                     </div>
