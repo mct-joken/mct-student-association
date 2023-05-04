@@ -55,7 +55,7 @@ export function Footer() {
                             <li><Link to={"/club"} style={LargeListStyle}>部活動</Link></li>
                             <li><Link to={"/members"} style={LargeListStyle}>学生会メンバー</Link></li>
                             <li><Link to={"/links"} style={LargeListStyle} >リンク</Link></li>
-                            <li><Link to={"/industry"} style={LargeListStyle}>インダストリ</Link></li>
+                            <li><Link to={"/industori"} style={LargeListStyle}>インダスとり</Link></li>
                         </ul>
                     </div>
                 </> : <>
@@ -83,7 +83,7 @@ export function Footer() {
                                 <li style={{width: "40%", marginBottom: "0.5rem"}}><Link to={"/club"} style={SmallListStyle}>部活動</Link></li>
                                 <li style={{width: "40%", marginBottom: "0.5rem"}}><Link to={"/members"} style={SmallListStyle}>学生会メンバー</Link></li>
                                 <li style={{width: "40%", marginBottom: "0.5rem"}}><Link to={"/links"} style={SmallListStyle} >リンク</Link></li>
-                                <li style={{width: "40%", marginBottom: "0.5rem"}}><Link to={"/industry"} style={SmallListStyle}>インダストリ</Link></li>
+                                <li style={{width: "40%", marginBottom: "0.5rem"}}><Link to={"/industori"} style={SmallListStyle}>インダスとり</Link></li>
                             </ul>
                         </div>
                         <div style={{

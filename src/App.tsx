@@ -8,6 +8,7 @@ import { Schedule } from './pages/schedule';
 import { Member } from './pages/member';
 import { Club } from "./pages/club";
 import { Links } from './pages/links';
+import { Industori } from './pages/industori';
 function App() {
   const [navOpen, setNavOpen] = React.useState<boolean>(false);
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/members" element={<Member/>}/>
             <Route path="/club" element={<Club />} />
             <Route path="/links" element={<Links />} />
+            <Route path="/industori" element={<Industori />} />
             <Route path="*" element={<Notfound/>} />
           </Routes>
           : null}
