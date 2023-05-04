@@ -55,7 +55,7 @@ export function Footer() {
                             <li><Link to={"/club"} style={LargeListStyle}>部活動</Link></li>
                             <li><Link to={"/members"} style={LargeListStyle}>学生会メンバー</Link></li>
                             <li><Link to={"/links"} style={LargeListStyle} >リンク</Link></li>
-                            <li><Link to={"/industori"} style={LargeListStyle}>インダストリ</Link></li>
+                            <li><Link to={"/industori"} style={LargeListStyle}>インダスとり</Link></li>
                         </ul>
                     </div>
                 </> : <>
