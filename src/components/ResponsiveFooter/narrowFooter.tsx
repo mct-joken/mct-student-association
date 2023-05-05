@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
-import TwitterLogo from "../assets/TwitterLogo.svg";
-import InstagramLogo from "../assets/InstagramLogo.svg";
-import styles from "../css/narrowFooter.module.css"
+import TwitterLogo from "../../assets/TwitterLogo.svg";
+import InstagramLogo from "../../assets/InstagramLogo.svg";
+import styles from "../../css/Footer/narrowFooter.module.css"
 
 export const NarrowFooter = () => (
   <footer className={styles.footer}>
