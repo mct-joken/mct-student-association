@@ -12,7 +12,7 @@ export const NarrowFooter = () => (
         <LinkItem to="/club"     children="部活動" />
         <LinkItem to="/members"  children="学生会メンバー" />
         <LinkItem to="/links"    children="リンク" />
-        <LinkItem to="/industry" children="インダストリ" />
+        <LinkItem to="/industori" children="インダスとり" />
       </ul>
     </div>
     <div className={styles.icons}>

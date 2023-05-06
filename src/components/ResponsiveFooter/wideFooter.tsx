@@ -10,14 +10,14 @@ export const WideFooter = () => (
         <LinkItem to="/club" children="部活動" />
         <LinkItem to="/members" children="学生会メンバー" />
         <LinkItem to="/links" children="リンク" />
-        <LinkItem to="/industry" children="インダストリ" />
+        <LinkItem to="/industori" children="インダスとり" />
       </ul>
     </div>
   </footer>
 );
 
 const LinkItem = (props: { children: string; to: string }) => (
-  <li className={styles.li}>
+  <li>
     <Link to={props.to} children={props.children} className={styles.link} />
   </li>
 );

@@ -1,12 +1,13 @@
 .footer {
   width: 100%;
-  height: auto;
+  display: grid;
   justify-content: center;
 }
 
 .links {
   height: auto;
   width: 100%;
+  display: flex;
   justify-content: center;
 }
 
@@ -14,17 +15,8 @@
   list-style-type: none;
   display: flex;
   float: none;
-  flex-wrap: nowrap;
-  gap: auto;
+  flex-wrap: wrap;
   margin: 1rem 0;
-}
-
-.li {
-  margin-top: 1rem;
-  flex-grow: 1;
-  margin-left: 0;
-  padding-left: 0;
-  text-align: center;
 }
 
 .link {
@@ -33,5 +25,4 @@
   color: #000;
   text-decoration: none;
   padding: 0.25rem 1rem;
-  white-space: nowrap;
 }
