@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Header navOpen={navOpen} setNavOpen={setNavOpen}/>
+        <Header setNavOpen={setNavOpen}/>
         {!navOpen ?
           <Routes>
             <Route path="/" element={<Home />} />

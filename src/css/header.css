@@ -1,0 +1,50 @@
+.headerlink {
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2em;
+}
+
+.headerlink::before,
+.headerlink::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease-out;
+}
+
+.headerlink:hover::before {
+    transform-origin: left;
+}
+
+.headerlink:hover::after {
+    transform-origin: right;
+}
+
+.headerlink:hover::before,
+.headerlink:hover::after {
+    transform: scaleX(1);
+}
+.MenuButton {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-out;
+}
+.MenuButton:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.link {
+    text-decoration: none;
+    color: #000;
+}
