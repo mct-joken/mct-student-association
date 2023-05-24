@@ -5,7 +5,8 @@ import {Markdown} from "../components/markdown";
 // Markdown形式で記述したテキストを表示する
 // 書き方はこのリンクを参照 https://qiita.com/Qiita/items/c686397e4a0f4f11683d
 const hometext = `
-# 当サイトの概要
+
+## 当サイトの概要
 
 当サイトでは松江高専学生会のメンバー紹介や活動報告、近況報告を行います。
 
