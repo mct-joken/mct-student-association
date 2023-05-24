@@ -15,7 +15,7 @@ function App() {
     <>
       <BrowserRouter>
         <Header navOpen={navOpen} setNavOpen={setNavOpen} />
-        {!navOpen ? (
+        {!navOpen ?
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/schedule" element={<Schedule />} />
@@ -25,8 +25,8 @@ function App() {
             <Route path="/industori" element={<Industori />} />
             <Route path="*" element={<Notfound />} />
           </Routes>
-        ) : null}
-        <Footer />
+          : null}
+        <Footer setNavOpen={setNavOpen}/>
       </BrowserRouter>
     </>
   );
