@@ -4,6 +4,13 @@ import { OrgPanel } from '../components/org-panel';
 import "../css/member.css";
 const org = [
     {
+        name:"執行部",
+        work:"学生会の頭脳",
+        president:"学生会長:小林広武",
+        vicePresident:"学生副会長:水津創",
+
+    },
+    {
         name: "総務局",
         work: "学生会の事務手続き、ホームページを管轄",
         president: "局長:渡辺蒼流",
