@@ -1,13 +1,17 @@
-#org-panel {
-    width: 20rem;
+.org-card {
+  width: 20rem;
+  text-align: center;
 }
-#org-panel h2 {
-    border-bottom: 1px solid #ccc;
+
+.org-card h2 {
+  border-bottom: 1px solid #ccc;
 }
-#member {
-    margin-top: 20px;
-    max-width: 1200px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+
+#members {
+  margin-top: 20px;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0 auto;
 }
