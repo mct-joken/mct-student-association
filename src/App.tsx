@@ -9,6 +9,7 @@ import { Members } from './pages/members';
 import { Club } from './pages/club';
 import { Links } from './pages/links';
 import { Industori } from './pages/industori';
+import "./css/App.css";
 function App() {
   const [navOpen, setNavOpen] = React.useState<boolean>(false);
   return (
