@@ -2,7 +2,7 @@ import { Title } from '../components/title';
 
 export const Schedule = () => (
   <>
-    <center style={{ width: '100%' }}>
+    <center style={{ width: '100%' }} className={"page"}>
       <Title title="活動予定" />
       <table
         style={{

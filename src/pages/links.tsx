@@ -37,6 +37,8 @@ const hometext = `
 
 export function Links() {
     return (
-        <Markdown text={hometext} />
-    );
+      <div className={"page"}>
+          <Markdown text={hometext} />
+      </div>
+);
 }

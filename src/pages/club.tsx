@@ -3,7 +3,7 @@ import { Club_card } from '../components/club_card';
 import { Props } from '../components/club_card';
 
 export const Club = () => (
-  <center>
+  <div className={"page"}>
     <Title title={'部活動'} />
     <div
       style={{
@@ -26,7 +26,7 @@ export const Club = () => (
         />
       ))}
     </div>
-  </center>
+  </div>
 );
 
 const clubs: Props[] = [

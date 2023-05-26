@@ -4,10 +4,12 @@ import { Organization } from '../components/organization';
 import '../css/member.css';
 
 export const Members = () => (
+  <div className={"page"}>
   <div id="members">
     {orgs.map((org) => (
       <OrganizationCard org={org} key={org.name} />
     ))}
+  </div>
   </div>
 );
 
