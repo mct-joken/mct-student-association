@@ -1,5 +1,5 @@
-import React, {memo} from "react";
-import {Markdown} from "../components/markdown";
+import React, { memo } from 'react';
+import { Markdown } from '../components/markdown';
 
 
 // Markdown形式で記述したテキストを表示する
@@ -20,10 +20,12 @@ const hometext = `
 [学生会Twitter](https://twitter.com/MctGakuseikai)
 - - -
 ここに記事をおく予定 まだバックエンドできてないからごめん
-`
+`;
 
 export function Home() {
-    return (
-        <Markdown text={hometext} />
-    );
+  return (
+    <div className={'page'}>
+      <Markdown text={hometext} />
+    </div>
+  );
 }
