@@ -6,7 +6,7 @@ import '../css/member.css';
 export const Members = () => (
   <div id="members">
     {orgs.map((org) => (
-      <OrganizationCard org={org} />
+      <OrganizationCard org={org} key={org.name} />
     ))}
   </div>
 );
