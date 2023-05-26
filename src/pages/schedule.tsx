@@ -12,7 +12,7 @@ const data = [
 export function Schedule() {
   return (
     <>
-      <center style={{width: "100%"}}>
+      <center style={{width: "100%"}} className={"page"}>
         <Title title="活動予定" />
         <table style={{
           border: "1px solid #000",

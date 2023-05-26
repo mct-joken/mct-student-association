@@ -43,7 +43,7 @@ const clubs: Props[] = [
 
 export function Club() {
   return (
-    <center>
+    <div className={"page"}>
       <Title title={"部活動"} />
       <div style={{
         flexWrap: "wrap",
@@ -57,6 +57,6 @@ export function Club() {
           <Club_card name={club.name} twitter={club.twitter} instagram={club.instagram} homepage={club.homepage} facebook={club.facebook}/>
         ))}
       </div>
-    </center>
+    </div>
   )
 }
