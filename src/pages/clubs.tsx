@@ -17,14 +17,7 @@ export const Clubs = () => (
       }}
     >
       {athletic_clubs.map((club) => (
-        <ClubCard
-          name={club.name}
-          twitter={club.twitter}
-          instagram={club.instagram}
-          homepage={club.homepage}
-          facebook={club.facebook}
-          key={club.name}
-        />
+        <ClubCard club={club} />
       ))}
     </div>
     <h3>文化局</h3>
@@ -39,14 +32,7 @@ export const Clubs = () => (
       }}
     >
       {cultural_clubs.map((club) => (
-        <ClubCard
-          name={club.name}
-          twitter={club.twitter}
-          instagram={club.instagram}
-          homepage={club.homepage}
-          facebook={club.facebook}
-          key={club.name}
-        />
+        <ClubCard club={club} />
       ))}
     </div>
   </div>

@@ -13,7 +13,7 @@ export type Club = {
   homepage?: string;
 };
 
-export const ClubCard = (club: Club) => (
+export const ClubCard = (props: { club: Club }) => (
   <div
     style={{
       display: 'flex',
@@ -24,8 +24,8 @@ export const ClubCard = (club: Club) => (
       justifyContent: 'space-between',
     }}
   >
-    <p>{club.name}</p>
-    <SocialIcons club={club} />
+    <p>{props.club.name}</p>
+    <SocialIcons club={props.club} />
   </div>
 );
 
