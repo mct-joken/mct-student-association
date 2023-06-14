@@ -3,7 +3,7 @@ import { ClubCard } from '../components/clubCard';
 import { Club } from '../components/clubCard';
 import '../css/club.css';
 export const Clubs = () => (
-  <div className={'page'} id={'club'}>
+  <center className={'page'} id={'club'}>
     <Title title={'部活動'} />
     <h3>体育局</h3>
     <div
@@ -35,7 +35,7 @@ export const Clubs = () => (
         <ClubCard club={club} />
       ))}
     </div>
-  </div>
+  </center>
 );
 
 const athletic_clubs: Club[] = [
