@@ -6,7 +6,7 @@ type Props = {
 };
 
 export const OrganizationCard = (props: Props) => (
-  <div className="org-card">
+  <div id="org-card">
     <h2>{props.org.name}</h2>
     <p>{props.org.president}</p>
     <p>{props.org.vicePresident}</p>

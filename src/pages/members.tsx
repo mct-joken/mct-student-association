@@ -2,14 +2,20 @@ import { OrganizationCard } from '../components/organizationCard';
 import { Organization } from '../components/organization';
 
 import '../css/member.css';
+import { Title } from '../components/title';
 
 export const Members = () => (
-  <div className={"page"}>
-  <div id="members">
-    {orgs.map((org) => (
-      <OrganizationCard org={org} key={org.name} />
-    ))}
-  </div>
+  <div id={"members"}>
+    <center>
+      <Title title={"学生会メンバー"} />
+    </center>
+    <div className={"page"}>
+      <main>
+        {orgs.map((org) => (
+          <OrganizationCard org={org} key={org.name} />
+        ))}
+      </main>
+    </div>
   </div>
 );
 
