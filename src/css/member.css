@@ -4,7 +4,8 @@
 }
 
 .org-card h2 {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 2px solid #068DA9;
+  font-weight: normal;
 }
 
 #members {
