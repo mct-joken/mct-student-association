@@ -1,10 +1,10 @@
-#org-card {
+.org-card {
   width: 20rem;
   text-align: center;
   height: 17rem;
 }
 
-#org-card h2 {
+.org-card h2 {
   border-bottom: 2px solid #068DA9;
   font-weight: normal;
 }
