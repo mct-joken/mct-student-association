@@ -15,7 +15,7 @@ export const NarrowHeader = (props: Props) => {
   return (
     <header className={styles.header}>
       <div className={styles['primary-header']}>
-        <Link to="/" children="松江高専　学生会" className={styles['primary-header-link']} />
+        <LinkItem to="/" children="松江高専　学生会"  setNavOpen={props.setNavOpen} />
       </div>
       <div onClick={OnClickMenuButton} className={styles['menu-button']}>
         {props.navOpen ? 'Close⬆' : 'Menu⬇︎'}
@@ -23,3 +23,8 @@ export const NarrowHeader = (props: Props) => {
     </header>
   );
 };
+const LinkItem = (props: { children: string, to: string, setNavOpen: (value: boolean) => void }) => (
+  <div className={styles.li}>
+    <Link to={props.to} children={props.children} className={styles['primary-header-link']} onClick={() => props.setNavOpen(false)}/>
+  </div>
+)
