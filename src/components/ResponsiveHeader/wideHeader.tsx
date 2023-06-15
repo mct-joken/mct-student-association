@@ -20,7 +20,7 @@ export const WideHeader = () => (
     <div className={styles.links}>
       <LinkItem to="/" children="ホーム" />
       <LinkItem to="/schedule" children="活動予定" />
-      <LinkItem to="/club" children="部活動" />
+      <LinkItem to="/clubs" children="部活動" />
       <LinkItem to="/members" children="学生会メンバー" />
       <LinkItem to="/links" children="リンク" />
       <LinkItem to="/industori" children="インダスとり" />
