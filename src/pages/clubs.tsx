@@ -1,9 +1,9 @@
 import { Title } from '../components/title';
 import { ClubCard } from '../components/clubCard';
 import { Club } from '../components/clubCard';
-import '../css/club.css';
+import '../css/clubs.css';
 export const Clubs = () => (
-  <center className={'page'} id={'club'}>
+  <center className={'page'} id={'clubs'}>
     <Title title={'部活動'} />
     <h3>体育局</h3>
     <div
