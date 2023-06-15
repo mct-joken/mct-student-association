@@ -6,19 +6,24 @@ import styles from '../../css/Header/wideHeader.module.css';
 
 export const WideHeader = () => (
   <header className={styles.header}>
-    <div className={styles['primary-header']}>
-      <Link to="/" children="松江高専　学生会" className={styles['primary-header-link']} />
+    <div className={styles.up}>
+      <div className={styles['primary-header']}>
+        <Link to="/" children="松江高専　学生会" className={styles['primary-header-link']} />
+      </div>
+      <div className={styles.icons}>
+        <div>
+          <LinkIcon to="https://twitter.com/MctGakuseikai/" src={TwitterLogo} alt="松江高専学生会のTwitter" />
+          <LinkIcon to="https://www.instagram.com/mctgakuseikai/" src={InstagramLogo} alt="松江高専学生会のInstagram" />
+        </div>
+      </div>
     </div>
     <div className={styles.links}>
+      <LinkItem to="/" children="ホーム" />
       <LinkItem to="/schedule" children="活動予定" />
       <LinkItem to="/club" children="部活動" />
       <LinkItem to="/members" children="学生会メンバー" />
       <LinkItem to="/links" children="リンク" />
       <LinkItem to="/industori" children="インダスとり" />
-    </div>
-    <div className={styles.icons}>
-      <LinkIcon to="https://twitter.com/MctGakuseikai/" src={TwitterLogo} alt="松江高専学生会のTwitter" />
-      <LinkIcon to="https://www.instagram.com/mctgakuseikai/" src={InstagramLogo} alt="松江高専学生会のInstagram" />
     </div>
   </header>
 );
