@@ -16,8 +16,10 @@ export const Clubs = () => (
         justifyContent: 'space-between',
       }}
     >
-      {athletic_clubs.map((club) => (
-        <ClubCard club={club} />
+      {athletic_clubs.map((club, index) => (
+        <div key={index}>
+          <ClubCard club={club} />
+        </div>
       ))}
     </div>
     <h3>文化局</h3>
@@ -31,8 +33,10 @@ export const Clubs = () => (
         justifyContent: 'space-between',
       }}
     >
-      {cultural_clubs.map((club) => (
-        <ClubCard club={club} />
+      {cultural_clubs.map((club, index) => (
+        <div key={index}>
+          <ClubCard club={club} />
+        </div>
       ))}
     </div>
   </div>
