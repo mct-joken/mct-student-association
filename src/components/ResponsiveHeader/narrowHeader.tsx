@@ -24,7 +24,7 @@ export const NarrowHeader = (props: Props) => {
   );
 };
 const LinkItem = (props: { children: string, to: string, setNavOpen: (value: boolean) => void }) => (
-  <div className={styles.li}>
+  <div className={styles['primary-header-link']}>
     <Link to={props.to} children={props.children} className={styles['primary-header-link']} onClick={() => props.setNavOpen(false)}/>
   </div>
 )
