@@ -5,16 +5,14 @@ import '../css/member.css';
 import { Title } from '../components/title';
 
 export const Members = () => (
-  <div id={"members"}>
-    <center>
-      <Title title={"学生会メンバー"} />
-    </center>
-    <div className={"page"}>
-      <main>
-        {orgs.map((org) => (
-          <OrganizationCard org={org} key={org.name} />
-        ))}
-      </main>
+  <div className={"page"}>
+    <div id="members">
+      {orgs.map((org) => (
+        <OrganizationCard org={org} key={org.name} />
+    ))}
+    </div>
+    <div id="gikai">
+      <OrganizationCard org={{name: "議会", work: "学生会活動の承認", president: "議長:福島日向", vicePresident: "副議長:永吉琉人"}}/>
     </div>
   </div>
 );

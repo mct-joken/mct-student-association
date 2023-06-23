@@ -9,7 +9,7 @@
   font-weight: normal;
 }
 
-#members main {
+#members {
   margin-top: 20px;
   max-width: 1200px;
   display: flex;
@@ -17,4 +17,8 @@
   align-items: center;
   flex-wrap: wrap;
   margin: 0 auto;
+}
+#gikai {
+  display: flex;
+  justify-content: center;
 }
