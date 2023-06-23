@@ -11,7 +11,7 @@ export const WideFooter = (props: Props) => (
     <div className={styles.links}>
       <ul className={styles.ul}>
         <LinkItem to="/schedule" children="活動予定" setNavOpen={props.setNavOpen} />
-        <LinkItem to="/club" children="部活動" setNavOpen={props.setNavOpen} />
+        <LinkItem to="/clubs" children="部活動" setNavOpen={props.setNavOpen} />
         <LinkItem to="/members" children="学生会メンバー" setNavOpen={props.setNavOpen} />
         <LinkItem to="/links" children="リンク" setNavOpen={props.setNavOpen} />
         <LinkItem to="/industori" children="インダスとり" setNavOpen={props.setNavOpen} />

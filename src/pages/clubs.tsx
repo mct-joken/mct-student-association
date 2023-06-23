@@ -1,9 +1,9 @@
 import { Title } from '../components/title';
 import { ClubCard } from '../components/clubCard';
 import { Club } from '../components/clubCard';
-import '../css/club.css';
+import '../css/clubs.css';
 export const Clubs = () => (
-  <div className={'page'} id={'club'}>
+  <center className={'page'} id={'clubs'}>
     <Title title={'部活動'} />
     <h3>体育局</h3>
     <div
@@ -17,7 +17,9 @@ export const Clubs = () => (
       }}
     >
       {athletic_clubs.map((club) => (
-        <ClubCard club={club} />
+        <div key={club.name}>
+          <ClubCard club={club} />
+        </div>
       ))}
     </div>
     <h3>文化局</h3>
@@ -32,10 +34,12 @@ export const Clubs = () => (
       }}
     >
       {cultural_clubs.map((club) => (
-        <ClubCard club={club} />
+        <div key={club.name}>
+          <ClubCard club={club} />
+        </div>
       ))}
     </div>
-  </div>
+  </center>
 );
 
 const athletic_clubs: Club[] = [

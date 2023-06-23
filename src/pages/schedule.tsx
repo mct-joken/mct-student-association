@@ -15,19 +15,27 @@ export const Schedule = () => (
             <th
               style={{
                 border: '1px solid #000',
-                backgroundColor: '#D9D9D9',
+                backgroundColor: '#E55807',
                 width: '10rem',
+                color: "#fff",
               }}
             >
-              <h3>日付</h3>
+              <h3 style={{
+                fontWeight: 'normal',
+              }}
+              >日付</h3>
             </th>
             <th
               style={{
                 border: '1px solid #000',
                 width: '20rem',
+                backgroundColor: '#E55807',
+                color: "#fff",
               }}
             >
-              <h3>活動内容</h3>
+              <h3 style={{
+                fontWeight: 'normal',
+              }}>活動内容</h3>
             </th>
           </tr>
         </thead>
@@ -37,7 +45,7 @@ export const Schedule = () => (
               <td
                 style={{
                   border: '1px solid #000',
-                  backgroundColor: '#D9D9D9',
+                  backgroundColor: '#ECF8F9',
                 }}
               >
                 <p

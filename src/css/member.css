@@ -1,17 +1,20 @@
 .org-card {
   width: 20rem;
   text-align: center;
+  height: 17rem;
 }
 
 .org-card h2 {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 2px solid #068DA9;
+  font-weight: normal;
 }
 
-#members {
+#members main {
   margin-top: 20px;
   max-width: 1200px;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   flex-wrap: wrap;
   margin: 0 auto;
 }
