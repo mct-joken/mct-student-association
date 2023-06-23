@@ -66,7 +66,6 @@ const athletic_clubs: Club[] = [
   { name: '剣道部' },
   { name: '柔道部', twitter: 'https://twitter.com/Mct_judo20' },
   { name: 'バドミントン部' },
-  { name: 'アーチェリー部' },
 ];
 const cultural_clubs: Club[] = [
   { name: '情報科学研究部', twitter: 'https://twitter.com/mct_joken', homepage: 'https://joken.dev' },
@@ -85,7 +84,6 @@ const cultural_clubs: Club[] = [
   },
   { name: '美術部' },
   { name: '漫画研究同好会', twitter: 'https://twitter.com/manken_mct' },
-  { name: '理科部' },
   { name: '書道部' },
   { name: '数学同好会' },
   { name: 'クイズ研究会', instagram: 'https://www.instagram.com/mctquiz/', twitter: 'https://twitter.com/MCT_Quiz' },
