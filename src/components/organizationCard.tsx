@@ -10,7 +10,6 @@ export const OrganizationCard = (props: Props) => (
     <h2>{props.org.name}</h2>
     <p>{props.org.president}</p>
     <p>{props.org.vicePresident}</p>
-    <p>業務内容</p>
     <p>{props.org.work}</p>
   </div>
 );
