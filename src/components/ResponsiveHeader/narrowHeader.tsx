@@ -14,12 +14,11 @@ export const NarrowHeader = (props: Props) => {
 
   return (
     <header className={styles.header}>
-      <div className={styles['primary-header']}>
-        <Link to="/" children="松江高専　学生会" className={styles['primary-header-link']} />
-      </div>
+      <Link to="/" children="松江高専　学生会"  onClick={() => props.setNavOpen(false) } className={styles['primary-header-link']} />
       <div onClick={OnClickMenuButton} className={styles['menu-button']}>
         {props.navOpen ? 'Close⬆' : 'Menu⬇︎'}
       </div>
     </header>
   );
 };
+
