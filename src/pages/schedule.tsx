@@ -79,10 +79,16 @@ export const Schedule = () => (
 );
 
 const schedules = [
-  { date: '4/5', content: '始業式・対面式' },
-  { date: '4/9', content: '部活動紹介' },
-  { date: '7/13~7/17', content: '学生総会' },
-  { date: '10/17', content: 'オープンキャンパス' },
-  { date: '11/21', content: '高専祭前夜祭' },
-  { date: '11/22', content: '高専祭本祭' },
+  { date: '4月', content: '部活動紹介' },
+  { date: '5月', content: '学生総会,インダストリとりイラストコンテスト' },
+  { date: '6月', content: 'スポーツデー' },
+  { date: '7月', content: 'e-sports大会, 七夕イベント' },
+  { date: '8月', content: '高専祭準備' },
+  { date: '9月', content: '高専祭準備' },
+  { data: '10月', content: '高専祭, 秋期スポーツデー, ハロウィンイベント' },
+  { data: '11月'},
+  { data: '12月', content: 'スポーツデー'},
+  { data: '1月', content: 'e-sports'},
+  { data: '2月', content: '引き継ぎ会, バレンタインイベント'},
+  { data: '3月', content: '卒業式'},
 ];
