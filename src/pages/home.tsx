@@ -13,7 +13,6 @@ export const Home = () => (
       <LinkItem to="https://twitter.com/MctGakuseikai">学生会Twitter</LinkItem>
     </ul>
     <hr />
-    <p>ここに記事をおく予定 まだバックエンドできてないからごめん</p>
   </div>
 );
 
